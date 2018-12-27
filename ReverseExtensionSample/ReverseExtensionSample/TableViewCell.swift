@@ -9,7 +9,7 @@
 import UIKit
 
 class TableViewCell: UITableViewCell {
-    
+
     @IBOutlet weak var iconImageView: UIImageView!
     @IBOutlet weak var messageLabel: UILabel!
     @IBOutlet weak var labelContainerView: UIView!
@@ -20,7 +20,7 @@ class TableViewCell: UITableViewCell {
         // Initialization code
         iconImageView.layer.cornerRadius = 16
         iconImageView.layer.masksToBounds = true
-        
+
         labelContainerView.layer.cornerRadius = 8
         labelContainerView.layer.masksToBounds = true
     }
@@ -30,7 +30,7 @@ class TableViewCell: UITableViewCell {
 
         // Configure the view for the selected state
     }
-    
+
     func configure(with message: MessageModel) {
         iconImageView.image = UIImage(named: message.imageName)
         messageLabel.text = message.message

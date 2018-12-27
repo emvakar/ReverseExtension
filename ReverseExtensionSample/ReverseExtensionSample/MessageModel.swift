@@ -25,11 +25,11 @@ struct MessageModel {
             return formatter
         }()
     }
-    
+
     let imageName: String
     let message: String
     let time: String
-    
+
     init() {
         imageName = Const.imageNames[Int(arc4random_uniform(UInt32(Const.imageNames.count)))]
         message = Const.messags[Int(arc4random_uniform(UInt32(Const.messags.count)))]
